@@ -1,0 +1,22 @@
+# SecondBrain integration config
+# Copy to integration/config.yaml and fill in your paths
+
+deepscientist:
+  research_output_dir: ~/Documents/research-output  # DS writes here
+  workspace_dir: ~/.deepscientist                   # DS state
+  backend: codex                                     # codex | claude | kimi | opencode
+  daemon_url: http://localhost:8420                  # ds daemon endpoint
+
+second_brain:
+  vault_path: ~/Documents/ObsidianVault             # Obsidian vault root
+  ingest_inbox: ~/Documents/ObsidianVault/inbox     # Second Brain reads from here
+  archive_after_ingest: true                         # move ingested sessions out of the inbox
+  synthesize_on_ingest: true                         # auto-run synthesis after each ingest
+
+integration:
+  watch: true                                        # poll the output dir for new sessions
+  poll_interval_seconds: 30                          # how often to check when watching
+  on_ingest_error: keep                              # keep | quarantine — what to do with a failed session
+
+# Integration: set deepscientist.research_output_dir = second_brain.ingest_inbox
+# to create a direct research-to-vault pipeline.

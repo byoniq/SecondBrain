@@ -1,0 +1,52 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.Python
+pip-log.txt
+
+# ── Node / npm ───────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+*.tgz
+
+# ── Obsidian vault data ───────────────────────────────────────────────────────
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+.trash/
+*.canvas
+
+# ── DeepScientist runtime ────────────────────────────────────────────────────
+.deepscientist/
+deepscientist/.env
+deepscientist/research-output/
+
+# ── Second Brain vault output ─────────────────────────────────────────────────
+second-brain/vault/
+second-brain/.env
+
+# ── Integration config (has paths) ───────────────────────────────────────────
+integration/config.yaml
+integration/config.toml
+
+# ── OS / editor ──────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
