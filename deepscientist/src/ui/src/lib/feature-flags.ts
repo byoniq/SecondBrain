@@ -1,1 +1,0 @@
-export const COPILOT_FILES_ENABLED = process.env.NEXT_PUBLIC_ENABLE_COPILOT_FILES === 'true'
